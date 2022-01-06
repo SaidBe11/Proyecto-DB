@@ -1,0 +1,32 @@
+<?php
+include ("conexion.php");   
+$materias = "SELECT * FROM materias";
+$resultado = mysqli_query($conectar, $materias);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Registro</title>
+</head>
+<body>
+    <h1>Carga academica</h1>
+    <table style="width: 50%">
+        <tr>
+            <th>Materia</th>
+            <th>Creditos</th>
+            <th>Semestre</th>
+        </tr>
+        <tr>
+            <?php while($row=mysqli_fetch_assoc($resultado)){
+            <td><? php echo $row["nombre"] ?></td>
+            <td><? php echo $row["credotos"] ?></td>
+            <td><? php echo $row["semestre"] ?></td>
+            <?php } ?>
+        </tr>
+    </table>
+</body>
+</html>

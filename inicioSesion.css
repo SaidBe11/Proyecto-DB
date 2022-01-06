@@ -1,0 +1,49 @@
+body{
+    background-image: url(img/fondo.jpeg);
+    background-size: cover;
+}
+
+#inicio{
+    text-align: center;
+    background-color: rgb(243, 209, 159);
+    position: absolute;
+    width: 600px;
+    right: 400px;
+    height: 67%;
+    bottom: 180px;
+    border: 3px solid #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+#inicio #benviar{
+    size: 20px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+}
+
+#inicio #imagen img{
+    border-radius: 110px;
+    width: 180px;
+    height: 180px;
+    transform: translate3d(0.0, 0.5em, 0);
+}
+#inicio #Nombre {
+    width: 100%;
+    height: 40px;
+    transform: translate3d(0, 0.7em, 0);
+}
+
+#inicio #contrase{
+    width: 96%;
+    height: 40px;
+    transform: translate3d(0, 0.7em, 0);
+}
+
+#inicio #enviar{
+    width: 105%;
+    height: 50;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+}
